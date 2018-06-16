@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilter.Redis", "src\BloomFilter.Redis\BloomFilter.Redis.csproj", "{284B9DA7-8038-4ED6-87C6-7D1EEA8E490C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilter.Redis.Test", "test\BloomFilter.Redis.Test\BloomFilter.Redis.Test.csproj", "{8F646137-F8ED-46BD-92FF-419D0AA3F100}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{284B9DA7-8038-4ED6-87C6-7D1EEA8E490C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284B9DA7-8038-4ED6-87C6-7D1EEA8E490C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284B9DA7-8038-4ED6-87C6-7D1EEA8E490C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284B9DA7-8038-4ED6-87C6-7D1EEA8E490C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F646137-F8ED-46BD-92FF-419D0AA3F100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F646137-F8ED-46BD-92FF-419D0AA3F100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F646137-F8ED-46BD-92FF-419D0AA3F100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F646137-F8ED-46BD-92FF-419D0AA3F100}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF0ECD50-4497-45B5-A721-A56C2555D95C}
+	EndGlobalSection
+EndGlobal
