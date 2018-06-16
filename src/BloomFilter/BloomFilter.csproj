@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <None Remove="BloomFilter.csproj.DotSettings" />
-    <None Remove="BloomFilter.Redis.csproj.DotSettings" />
   </ItemGroup>
 
   <ItemGroup>
