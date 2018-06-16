@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilter.Redis", "src\BloomFilter.Redis\BloomFilter.Redis.csproj", "{284B9DA7-8038-4ED6-87C6-7D1EEA8E490C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilter", "src\BloomFilter\BloomFilter.csproj", "{284B9DA7-8038-4ED6-87C6-7D1EEA8E490C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilter.Redis.Test", "test\BloomFilter.Redis.Test\BloomFilter.Redis.Test.csproj", "{8F646137-F8ED-46BD-92FF-419D0AA3F100}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilter.Test", "test\BloomFilter.Test\BloomFilter.Test.csproj", "{8F646137-F8ED-46BD-92FF-419D0AA3F100}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,10 +4,10 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace BloomFilter.Redis
+namespace BloomFilter
 {
     [SuppressMessage("ReSharper", "InconsistentNaming")]
-    internal static class GeneralHashFunctions
+    public static class GeneralHashFunctions
     {
         public static ulong RSHash(string value)
         {

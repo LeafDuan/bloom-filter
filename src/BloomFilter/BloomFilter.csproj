@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="BloomFilter.csproj.DotSettings" />
     <None Remove="BloomFilter.Redis.csproj.DotSettings" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="murmurhash" Version="1.0.2" />
     <PackageReference Include="StackExchange.Redis.StrongName" Version="1.2.6" />
   </ItemGroup>
 

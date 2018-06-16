@@ -1,4 +1,4 @@
-﻿namespace BloomFilter.Redis
+﻿namespace BloomFilter
 {
     public class RedisCacheOptions
     {

@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace BloomFilter.Redis.Test
+namespace BloomFilter.Test
 {
-    public class BloomFilterTest
+    public class RedisBloomFilterTest
     {
         private readonly ITestOutputHelper _output;
 
-        public BloomFilterTest(ITestOutputHelper output)
+        public RedisBloomFilterTest(ITestOutputHelper output)
         {
             this._output = output;
         }
@@ -57,14 +57,14 @@ namespace BloomFilter.Redis.Test
                 Server = "127.0.0.1:6379,abortConnect=false,defaultDatabase=2"
             });
 
-            var bloom = new BloomFilter(redis);
+            var bloom = new RedisBloomFilter(redis);
             var duplication = false;
 
             await redis.KeyDelete("test-url");
 
             foreach (var url in urls)
             {
-                if (!await bloom.Filter("test-url", url))
+                if (!await bloom.TryAdd("test-url", url))
                 {
                     duplication = true;
 
@@ -72,7 +72,7 @@ namespace BloomFilter.Redis.Test
                 }
             }
 
-            //await redis.KeyDelete("test-url");
+            await redis.KeyDelete("test-url");
 
             redis.Dispose();
 
