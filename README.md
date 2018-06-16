@@ -6,7 +6,7 @@ bloom filter for .net core
 > 使用到 bitmap 来完成任务   
 > 适合分布式情况 
 
-* offset range [0, 2^23-1], 所以计算出来的 hash 值要映射到此区间
+* offset range [0, 2^23-1], 计算出来的 hash 值要映射到此区间
 * max offset = 2^23-1 时，使用最大内存 512MB
 * 内存使用的多少，由 offset 区间决定
 
